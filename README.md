@@ -4,9 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Herramientas necesarias para descargar e instalar
 
-[GIT](https://git-scm.com/downloads) como Repositorio
-[NodeJS](https://nodejs.org/es/download/) como ambiente de desarrollo
+1. [GIT](https://git-scm.com/downloads) como Repositorio.
+2. [NodeJS](https://nodejs.org/es/download/) como ambiente de desarrollo.
+
 npm install -g typescript
+
 npm install -g @angular/cli
 
 ## Cómo levantar este proyecto
@@ -19,19 +21,21 @@ git clone [URL del proyecto en su cuenta GitHub]
 
 npm install bootstrap jquery popper.js
 
->"projects": {
->    ...
->    "styles": [
->        "src/styles.css",
->        "node_modules/bootstrap/dist/css/bootstrap.min.css"
->    ],
->    "scripts": [
->        "node_modules/jquery/dist/jquery.slim.min.js",
->        "node_modules/popper.js/dist/umd/popper.min.js",
->        "node_modules/bootstrap/dist/js/bootstrap.min.js"
->    ]
->    ...
->}
+```json
+"projects": {
+    ...
+    "styles": [
+        "src/styles.css",
+        "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    ],
+    "scripts": [
+        "node_modules/jquery/dist/jquery.slim.min.js",
+        "node_modules/popper.js/dist/umd/popper.min.js",
+        "node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ]
+    ...
+}
+```
 
 ## Development server
 
