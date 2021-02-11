@@ -1,0 +1,151 @@
+<div class="my-4">
+    <h3>{{ titulo }}</h3>
+</div>
+<div class="row">
+    <div class="col-4">
+        <img [src]="'./assets/img/region_sureste.png'" alt="image" style="width: 100%">
+    </div>
+    <div class="col-8">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="callout callout-default">
+                            <h5 class="card-title">{{ oficina.nombre }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ oficina.ciudad }}</h6>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <i *ngIf="oficina.centro" class="fas fa-city"></i>
+                    </div>
+                    <div class="col-1">
+                        <i *ngIf="oficina.torre" class="fas fa-monument"></i>
+                    </div>
+                    <div class="col-1">
+                        <i *ngIf="oficina.infraestructura" class="fas fa-broadcast-tower"></i>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div *ngFor="let gerente of oficina.gerentes" class="row">
+                        <div class="col-8">
+                            <span class="card-text">{{ gerente.puesto }}: {{ gerente.nombre }}</span>
+                        </div>
+                        <div class="col-4 text-right">
+                            <i class="fas fa-phone-volume"></i>&nbsp;&nbsp;{{ gerente.telefono }}
+                        </div>
+                    </div>
+                </div>
+                <p class="card-test">Personal asignado a la Gerencia: {{ oficina.personal }}</p>
+                <p class="card-test">Total del personal asignado a la region: {{ oficina.personalTotal }}</p>
+                <p class="card-text mt-3">{{ oficina.descripcion }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row pt-4">
+    <div class="col-6">
+        <table class="table">
+            <thead style="background-color: slategray">
+                <tr>
+                    <th scope="col" class="text-center" style="color: white">Id</th>
+                    <th scope="col" class="text-center" style="color: white">Ciudad</th>
+                    <th scope="col" class="text-center"><i class="fas fa-city" style="color: white"></i></th>
+                    <th scope="col" class="text-center"><i class="fas fa-monument" style="color: white"></i></th>
+                    <th scope="col" class="text-center"><i class="fas fa-broadcast-tower" style="color: white"></i></th>
+                    <th scope="col" class="text-center"><i class="fas fa-users" style="color: white"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-center">73</th>
+                    <td>Campeche</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center">7</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center">74</th>
+                    <td>Cd. del Carmen</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center">17</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center">75</th>
+                    <td>Cd. de Piste (Chichen-itzá)</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center">76</th>
+                    <td>Minatitlán</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center">6</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center">77</th>
+                    <td>Palenque</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center">3</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center">78</th>
+                    <td>Tapachula</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center">12</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center">79</th>
+                    <td>Tuxtla Gutiérrez</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center">13</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-center">80</th>
+                    <td>Villa Hermosa</td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center"><i class="fas fa-check-circle"></i></td>
+                    <td class="text-center">19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-9">
+                        <h5 class="card-title">Jefatura Regional</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Cancún, Quintana Roo</h6>
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                </div>
+                <p class="card-text">Gerente Regional: Miguel Ángel González Ojeda</p>
+                <p class="card-text">Alguna descripción sobre la infraestructura de la gerencia así como detalle de las
+                    estaciones y demás información relevante.</p>
+                <a href="#" class="card-link">Ver más</a>
+            </div>
+        </div>
+    </div>
+</div>

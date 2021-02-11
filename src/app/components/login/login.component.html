@@ -1,5 +1,5 @@
 <div class="my-4">
-    <h3>Iniciar sesión</h3>
+    <h3>{{ titulo }}</h3>
 </div>
 
 <div class="card col-7">
@@ -7,13 +7,13 @@
         <div class="mb-3 row">
             <label class="col-sm-3 col-form-label" style="text-align: right;">Usuario:</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" placeholder="Usuario">
+                <input [(ngModel)]="usuario.username" type="text" class="form-control" name="username" id="username" placeholder="Usuario" autofocus required>
             </div>
         </div>
         <div class="mb-3 row">
             <label class="col-sm-3 col-form-label" style="text-align: right;">Contraseña:</label>
             <div class="col-sm-9">
-                <input type="password" class="form-control" placeholder="Contraseña">
+                <input [(ngModel)]="usuario.password" type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
             </div>
         </div>
         <div class="mb-3 row">
@@ -32,7 +32,7 @@
         </div>
         <div class="mb-3 row">
             <div class="col-12 text-right">
-                <button class="btn btn-primary px-4" type="button">Enviar</button>
+                <input (click)="login()" type="submit" class="btn btn-primary px-4" value="Enviar">
             </div>
         </div>
     </div>
