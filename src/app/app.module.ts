@@ -16,7 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 import { OficinasComponent } from './components/oficinas/oficinas.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { InfoOficinaComponent } from './components/oficinas/info-oficina/info-oficina.component';
-import { MapaComponent } from './components/oficinas/mapa/mapa.component';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 
 @NgModule({
