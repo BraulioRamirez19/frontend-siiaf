@@ -17,6 +17,11 @@ import { OficinasComponent } from './components/oficinas/oficinas.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { InfoOficinaComponent } from './components/oficinas/info-oficina/info-oficina.component';
 import { MapaComponent } from './components/mapa/mapa.component';
+import { CentroComponent } from './components/mapa/centro/centro.component';
+import { NoresteComponent } from './components/mapa/noreste/noreste.component';
+import { NoroesteComponent } from './components/mapa/noroeste/noroeste.component';
+import { OccidenteComponent } from './components/mapa/occidente/occidente.component';
+import { SuresteComponent } from './components/mapa/sureste/sureste.component';
 
 
 @NgModule({
@@ -30,7 +35,12 @@ import { MapaComponent } from './components/mapa/mapa.component';
     LoginComponent,
     OficinasComponent,
     InfoOficinaComponent,
-    MapaComponent
+    MapaComponent,
+    CentroComponent,
+    NoresteComponent,
+    NoroesteComponent,
+    OccidenteComponent,
+    SuresteComponent
   ],
   imports: [
     BrowserModule,
