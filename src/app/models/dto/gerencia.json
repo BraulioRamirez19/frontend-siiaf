@@ -1,0 +1,108 @@
+{
+    "id": "1",
+    "nombre": "Gerencia Regional Sureste",
+    "ciudad": "Mérida, Yucatán",
+    "gerente": "María Cristina Méndez Alvarado",
+    "coordinador": "Julio César Interian Díaz",
+    "descripcion": "Alguna descripción sobre la infraestructura de la gerencia así como detalle de las estaciones y demás información relevante.",
+    "personal": "143",
+    "infraestructuras": [
+        {
+            "infraestructura": {
+                "id": 1,
+                "nombre": "Centro de Control"
+            },
+            "valor": true
+        },
+        {
+            "infraestructura": {
+                "id": 2,
+                "nombre": "Torre de Control"
+            },
+            "valor": true
+        },
+        {
+            "infraestructura": {
+                "id": 3,
+                "nombre": "Infraestructura"
+            },
+            "valor": true
+        }
+    ],
+    "jefaturas": [
+        {
+            "id": "1",
+            "nombre": "Jefatura Regional",
+            "ciudad": "Cancún, Quintana Roo",
+            "gerente": "Miguel Ángel González Ojeda",
+            "descripcion": "Alguna descripción sobre la infraestructura de la jefatura así como detalle de las estaciones y demás información relevante.",
+            "personal": "81",
+            "infraestructuras": [
+                {
+                    "infraestructura": {
+                        "id": 1,
+                        "nombre": "Centro de Control"
+                    },
+                    "valor": true
+                },
+                {
+                    "infraestructura": {
+                        "id": 2,
+                        "nombre": "Torre de Control"
+                    },
+                    "valor": true
+                },
+                {
+                    "infraestructura": {
+                        "id": 3,
+                        "nombre": "Infraestructura"
+                    },
+                    "valor": true
+                }
+            ]
+        }
+    ],
+    "estaciones": [
+        {
+            "id": "73",
+            "ciudad": "Campeche",
+            "estado": "Campeche",
+            "personal": "7",
+            "infraestructuras": [
+                {
+                    "infraestructura": {
+                        "id": 1,
+                        "nombre": "Centro de Control"
+                    },
+                    "valor": false
+                },
+                {
+                    "infraestructura": {
+                        "id": 2,
+                        "nombre": "Torre de Control"
+                    },
+                    "valor": true
+                },
+                {
+                    "infraestructura": {
+                        "id": 3,
+                        "nombre": "Infraestructura"
+                    },
+                    "valor": true
+                }
+            ]
+        },
+        {
+            "id": "73",
+            "ciudad": "Cd. del Carmén",
+            "estado": "Campeche",
+            "personal": "17"
+        },
+        {
+            "id": "73",
+            "ciudad": "Campeche",
+            "estado": "Campeche",
+            "personal": "7"
+        }
+    ]
+}

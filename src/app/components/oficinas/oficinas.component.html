@@ -1,0 +1,26 @@
+<div class="my-4">
+    <h3>{{ titulo }}</h3>
+</div>
+<div class="row">
+    <div class="col-9 border">
+        <!--<app-sureste></app-sureste>-->
+        <!--<app-occidente></app-occidente>-->
+        <!--<app-noroeste></app-noroeste>-->
+        <!--<app-noreste></app-noreste>-->
+        <!--<app-centro></app-centro>-->
+        <app-mapa></app-mapa>
+        <!--<img [src]="'./assets/img/oficinas.png'" alt="image" style="width: 100%">-->
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Gerencias</h5>
+                <div *ngFor="let gerencia of gerencias" class="my-2">
+                    <a [routerLink]="['/oficinas/info', gerencia.id]" routerLinkActive="router-link-active">{{ gerencia.nombre }}</a>
+                    <br>
+                    <span class="mb-2 text-muted">{{ gerencia.ciudad }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
