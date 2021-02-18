@@ -37,6 +37,13 @@ npm install bootstrap jquery popper.js
 }
 ```
 
+## Instalación de amcharts4
+[amcharts](https://www.amcharts.com/download/)
+1. npm install @amcharts/amcharts4
+2. npm install @amcharts/amcharts4-geodata
+3. npm install @amcharts/amcharts4-fonts
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
